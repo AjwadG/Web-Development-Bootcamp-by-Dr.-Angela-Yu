@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Calcuator</h1>
+    <form action="/" method="post">
+        <input id='num1' type='text' name="num1" placeholder="First Number">
+        <input id='num2' type='text' name="num2" placeholder="second Number">
+        <br>
+        <button type="submit" name="submit">Calcualt</button>
+    </form>
+
+    <script>
+        document.querySelector('button').addEventListener('click', function(){
+            alert(Number(document.querySelector('#num1').value) + Number(document.querySelector('#num2').value));
+        });
+        </script>
+</body>
+</html>

@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <title>Personal Porfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600,800">
+    <style>
+        .navbar{
+            background-color: #1f2233;
+        }
+        .navbar-brand{
+            font-size: 2rem;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 800;
+        }
+        .text-logo{
+            color: #3b87ca;
+        }
+        .navbar-toggler-icon {
+            background-image: url(./assets/picture.png);
+            width: 40px;
+        }
+        .navbar-toggler{
+            border: 0;
+        }
+        .nav-link{
+            color: white;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 600;
+            font-size: 16px;
+        }
+        .nav-btn{
+            font-size: 15px;
+            font-weight: 600;
+            border: 1px solid #3b87ca;
+            color: #3b87ca;
+        }
+
+        h1,h2,h3,h4,h5{
+            font-family: 'Montserrat', sans-serif;;
+        }
+        p{
+            font-family: 'Open Sans', sans-serif;;
+        }
+        .name {
+            font-size: 4rem;
+        }
+        .cv{
+            border: 1px solid #3b87ca;
+            border-radius: 5px;
+        }
+        .percent{
+            border: 1px solid #3b87ca;
+            border-radius: 5px;
+            padding: 3px;
+            position: absolute;
+        }
+        .pname{
+            font-size: 16px;
+            text-transform: uppercase;
+            margin-bottom: 17px;
+        }
+        .marker{
+            width: 5px;
+            height: 5px;
+            padding: 4px;
+            background-color: #1f2233;
+            border: 1px solid #3b87ca;
+            border-top: 0;
+            border-left: 0;
+            position: absolute;
+            transform: translateX(-50%) rotate(45deg);
+            top: 70%;
+        }
+        .underLine{
+            position: absolute; border-top: #3b87ca solid 2px;
+        }
+    </style>
+</head>
+<body>
+    <!--  nav bar  -->
+
+    <nav class="navbar position-sticky top-0  navbar-expand-lg navbar-dark " aria-label="Eighth navbar example">
+        <div class="container px-5 py-1" >
+          <a class="navbar-brand mr-5" href="#"><span class="text-logo">me</span>jwad</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample07" aria-controls="navbarsExample07" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+    
+          <div class="collapse navbar-collapse " id="navbarsExample07">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 ">
+              <li class="nav-item">
+                <a class="nav-link active"  style="color: #3b87ca;" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link px-3" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Resume</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link px-3" href="#">Porfolio</a>
+              </li>
+            </ul>
+            <button class="btn nav-btn  btn-outline-primary py-2 px-3" type="submit">Contact Me</button>
+          </div>
+        </div>
+      </nav>
+
+      <!-- home -->
+        <section id="home">
+
+            <div class="container col-xxl-8 px-4 py-5">
+                <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+                  <div class="col-8 col-sm-7 col-lg-5 px-0">
+                    <img src="assets/My project.png". class="d-block  img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+                  </div>
+                  <div class="col-lg-7">
+                    <p class="lead">Hi there  i'm</p>
+                    <h1 class="display-5 fw-bold  my-5 text-body-emphasis lh-1  name"><span class="text-logo">Ajwad Elgandouz</span></h1>
+                    <p class="lead mb-5">A Full Stack Developer & flutter mobile app Developer</p>
+                    <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                        <button type="button" class="btn btn-outline-primary btn-lg px-4 me-md-2">Hire me</button>
+                      </div>
+                  </div>
+                </div>
+              </div>
+      </section>
+
+      <!-- about-->
+      <section id="about">
+
+        <div class="container col-xxl-8 px-4 py-5">
+            <div class="row flex-lg-row align-items-center g-5 py-5">
+              <div class="col-8 col-sm-7 col-lg-5 px-0">
+                <img src="assets/icon.png". class="  img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+              </div>
+              <div class="col-lg-7">
+                <p class="lead">discover</p>
+                <h1 class="display-5 fw-bold text-body-emphasis lh-1 ">About me</h1>
+                <p class="lead mb-5"><span class="border-top border-info border-3">lorem ipsum</span> dolor sit amet consectetur adipisicing elit. Non sint commodi hic voluptas, eos quam nulla eius delectus voluptatem fuga quod praesentium tempora similique harum eaque accusamus perspiciatis, quis beatae.</p>
+                <div class="container cv pt-2">
+                    <div class="row pt-2 pb-0 ">
+                        <div class="col-sm-6 "><p>Name: Ajwad elgandouz</p></div>
+                        <div class="col-sm-6"><p>Age: 22</p></div>
+                        <div class="col-sm-6"><p>Phone: +1 212 451-4127</p></div>
+                        <div class="col-sm-6"><p>Address: zuwarah, libya</p></div>
+                        <div class="col-sm-6"><p>Experience: 22 Years</p></div>
+                        <div class="col-sm-6"><p>Freelance: Available</p></div>
+                        <div class="col-sm-6 " style="margin-bottom: 0;"><p>Skype: idk.tbh</p></div>
+                        <div class="col-sm-6 " style="margin-bottom: 0;"><p>Dribbble: ajwad.dribbble</p></div>
+                    </div>
+
+                </div>
+                <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                    <button type="button" class="btn btn-outline-primary mt-3 btn-lg px-4 me-md-2">My CV</button>
+                  </div>
+              </div>
+            </div>
+          </div>
+      </section>
+
+      <!-- resume -->
+      <section id="resume">
+        <div class="px-4 pt-5 my-5 text-center">
+            <p class="lead mb-0">My Awesome Skills</p>
+            <h1 class="display-5 fw-bold text-body-emphasis mt-0 pt-0 mb-4">My Skills</h1>
+            <div class="container pt-5">
+                <div class="row text-start">
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="mx-2 border-bottom mb-5 position-relative"><h4 class="d-inline-block pname">Lorem</h4> <span class="percent" style=" left: calc(90% - 20px);">90%</span> <span class="marker" style=" left:90%;"></span><span class="underLine d-block" style="width: 90%;"></span></div> 
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="mx-2 border-bottom mb-5 position-relative"><h4 class="d-inline-block pname">ipsum</h4> <span class="percent"  style=" left: calc(80% - 20px);" >80%</span> <span class="marker" style=" left:80%;"></span><span class="underLine d-block" style="width: 80%;"></span></div>
+                    
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="mx-2 border-bottom mb-5 position-relative"><h4 class="d-inline-block pname">dolor</h4> <span class="percent"  style=" left: calc(80% - 20px);" >80%</span> <span class="marker" style=" left:80%;"></span><span class="underLine d-block" style="width: 80%;"></span></div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="mx-2 border-bottom mb-5 position-relative"><h4 class="d-inline-block pname">sit</h4> <span class="percent"  style=" left: calc(70% - 20px);" >70%</span> <span class="marker" style=" left:70%;"></span><span class="underLine d-block" style="width: 70%;"></span></div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="mx-2 border-bottom mb-5 position-relative"><h4 class="d-inline-block pname">amet</h4> <span class="percent"  style=" left: calc(70% - 20px);" >70%</span> <span class="marker" style=" left:70%;"></span><span class="underLine d-block" style="width: 70%;"></span></div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="mx-2 border-bottom mb-5 position-relative"><h4 class="d-inline-block pname">consectetur</h4> <span class="percent"  style=" left: calc(60% - 20px);" >60%</span> <span class="marker" style=" left:60%;"></span><span class="underLine d-block" style="width: 60%;"></span></div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="mx-2 border-bottom mb-5 position-relative"><h4 class="d-inline-block pname">adipisicing</h4> <span class="percent"  style=" left: calc(60% - 20px);" >60%</span> <span class="marker" style=" left:60%;"></span><span class="underLine d-block" style="width: 60%;"></span></div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="mx-2 border-bottom mb-5 position-relative"><h4 class="d-inline-block pname">elit</h4> <span class="percent"  style=" left: calc(85% - 20px);" >85%</span> <span class="marker" style=" left:85%;"></span><span class="underLine d-block" style="width: 85%;"></span></div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="mx-2 border-bottom mb-5 position-relative"><h4 class="d-inline-block pname">Laudantium</h4> <span class="percent"  style=" left: calc(95% - 20px);" >95%</span> <span class="marker" style=" left:95%;"></span><span class="underLine d-block" style="width: 95%;"></span></div>
+                    </div>
+                </div>
+              
+            </div>
+
+          </div>
+      </section>
+
+      <!-- porfolio -->
+
+      <section id="portfolio">
+
+        <div class="container px-4 py-5" id="custom-cards">
+            <h2 class=" display-5 fw-bold  text-center my-5 text-body-emphasis lh-1">My Portfolio</h2>
+        
+            <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+              <div class="col">
+                <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('unsplash-photo-1.jpg');">
+                  <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                    <h3 class="pt-3 mt-1 mb-4 display-6 lh-1 fw-bold">2015 - 2016</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto eum dolores odit quae esse culpa ullam ut soluta aspernatur, aliquam temporibus nobis vero cum numquam eius nulla sit nesciunt enim!</p>
+                    <ul class="d-flex justify-content-end list-unstyled mt-auto">
+                      <li class="d-flex align-items-center me-3">
+                        <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"></use></svg>
+                        <small>Triplo</small>
+                      </li>
+                      <li class="d-flex align-items-center">
+                        <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"></use></svg>
+                        <small>1 year</small>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+        
+              <div class="col">
+                <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('unsplash-photo-2.jpg');">
+                  <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                    <h3 class="pt-3 mt-1 mb-4 display-6 lh-1 fw-bold">2017 - 2019</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione deserunt corrupti in aut? Esse fugiat aliquid optio deleniti asperiores! Quaerat ad beatae assumenda sapiente consequatur voluptate maxime deleniti rem adipisci!</p>
+                    <ul class="d-flex justify-content-end list-unstyled mt-auto">
+                        
+                      <li class="d-flex align-items-center me-3">
+                        <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"></use></svg>
+                        <small>Tripoli</small>
+                      </li>
+                      <li class="d-flex align-items-center">
+                        <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"></use></svg>
+                        <small>2 years</small>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+        
+              <div class="col">
+                <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('unsplash-photo-3.jpg');">
+                  <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+                    <h3 class="pt-3 mt-1 mb-4 display-6 lh-1 fw-bold">2019 - Now</h3>
+                    <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi tenetur neque voluptas non qui velit dolorem, libero deserunt minus est nobis eos doloribus alias a! Ratione reprehenderit corrupti commodi dicta.</p>
+                    <ul class="d-flex flex-end list-unstyled mt-auto">
+                      <li class="me-auto"></li>
+                      <li class="d-flex align-items-center me-3">
+                        <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"></use></svg>
+                        <small>zuwarah</small>
+                      </li>
+                      <li class="d-flex align-items-center">
+                        <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"></use></svg>
+                        <small>4+ years</small>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </section>
+
+      <!-- Contact -->
+
+      <section id="Contact">
+
+
+      </section>
+
+      <!-- fotter -->
+
+      <footer>
+        <div class="container">
+            <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+              <div class="col-md-4 d-flex align-items-center">
+                <a href="/" class="mb-3 me-2 mb-md-0 text-body-light text-decoration-none lh-1">
+                  Me<span style="color: white;">jwad</span>
+                </a>
+                <span class="mb-3 mb-md-0 text-body-secondary">© 2023 mejwad, Inc</span>
+              </div>
+          
+              <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+                <li class="ms-3"><a class="text-body-secondary" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+                    <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+                  </svg></a></li>
+                <li class="ms-3"><a class="text-body-secondary" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                    <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+                  </svg></a></li>
+                <li class="ms-3"><a class="text-body-secondary" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                    <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                  </svg></a></li>
+              </ul>
+            </footer>
+          </div>
+      </footer>
+    
+</body>
+</html>

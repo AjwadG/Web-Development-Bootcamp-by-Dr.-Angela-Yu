@@ -1,0 +1,24 @@
+<%- include("partials/header"); -%>
+
+
+db.products.insertOne({
+    _id: 3,
+    name: "Rubber",
+    price: 1.30,
+    reviews : [
+    {
+        authorName: "saly",
+        rating: 5,
+        review : "Best Rubber ever!"
+    },
+    {
+        authorName: "John",
+        rating: 5,
+        review : "Amaizing Rubber!"
+    }
+    ]})
+
+
+
+
+<%- include("partials/footer"); -%>
