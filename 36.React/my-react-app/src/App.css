@@ -4,7 +4,12 @@
   padding: 2rem;
   text-align: center;
 }
-
+.heading {
+  font-size: 50px;
+  font-weight: bold;
+  display: inline-block;
+  border-bottom: 5px solid black;
+}
 .logo {
   height: 6em;
   padding: 1.5em;
