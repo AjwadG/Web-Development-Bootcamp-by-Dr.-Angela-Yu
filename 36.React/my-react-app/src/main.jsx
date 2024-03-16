@@ -1,10 +1,16 @@
 import React from 'react'
-import ReactDOM from 'react-dom/client'
+import ReactDOM from 'react-dom'
 import App from './App.jsx'
 import './index.css'
 
-ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-)
+const fName = "AjwadG";
+const lName = "Elgandouz";
+const year = new Date().getFullYear();
+
+ReactDOM.render(
+  <div>
+    <h1>Created by {`${fName} ${lName}`}.</h1>
+    <p>Copyright {year}</p>
+  </div>,
+  document.getElementById("root")
+);
