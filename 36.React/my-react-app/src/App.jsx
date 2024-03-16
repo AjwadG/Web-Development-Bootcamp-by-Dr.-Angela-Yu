@@ -32,4 +32,22 @@ function App() {
   )
 }
 
-export default App
+const fName = 'Ajwad'
+const lName = 'Elgandouz'
+
+const year = new Date().getFullYear()
+
+function water() {
+  return (<>
+    <div>
+    <h1>Created by {`${fName} ${lName}`}.</h1>
+    <p>Copyright {year}</p>
+  </div>
+  </>)
+
+}
+
+const views = [App, water]
+
+export default views;
+
